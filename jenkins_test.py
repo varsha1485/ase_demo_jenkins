@@ -1,6 +1,6 @@
 def check_palindrome():
     # 🔧 Change this input string to test different cases
-    input_string = "madam"
+    input_string = "sir"
 
     # Normalize the input (remove spaces, make lowercase if needed)
     cleaned = input_string.replace(" ", "").lower()
