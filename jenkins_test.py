@@ -1,10 +1,14 @@
-num = int(input("Enter a number: "))
-if num > 1:
-    for i in range(6, num):
-        if num % i == 0:
-            print("Not Prime")
-            break
+def check_palindrome():
+    # 🔧 Change this input string to test different cases
+    input_string = "madam"
+
+    # Normalize the input (remove spaces, make lowercase if needed)
+    cleaned = input_string.replace(" ", "").lower()
+
+    if cleaned == cleaned[::-1]:
+        print("SUCCESS")
     else:
-        print("Prime")
-else:
-    print("Not Prime")
+        raise Exception("ERROR")
+
+# Run the function
+check_palindrome()
